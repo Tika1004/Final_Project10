@@ -1,0 +1,10 @@
+{
+  "firstname_lastname": "Tika Bitsadze",
+  "email": "tikatest@gmail.com",
+  "phone": "5550000000",
+  "personalNumber": "11223300",
+  "password": "Tika123",
+  "wrongEmail": "incorrect@gmail.com",
+  "wrongPassword": "wrong123"
+}
+
