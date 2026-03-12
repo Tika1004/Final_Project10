@@ -1,7 +1,7 @@
 Cypress.Commands.add('registerUser', (data) => {
   cy.visit('https://testzootopia.loremipsum.ge/ka/register')
   cy.contains('შესვლა').click({ force: true })
-  cy.contains('გაიარეთ რეგისტრაცია').click({ force: true }) // Force true cypress - ის მიერ დამატებული პარამეტრია, რომელიც საშუალებას აძლევს ელემენტზე კლიკი განხორციელდეს მაშინაც კი, თუ ის არ არის სრულად ხილული ან გადაფარულია სხვა ელემენტით. ეს განსაკუთრებით გამოსადეგია ისეთ შემთხვევებში, როდესაც ელემენტი შეიძლება იყოს დროებით დაფარული ან არ იყოს სრულად ხილული, მაგრამ მაინც საჭიროა მასზე კლიკი. ამ შემთხვევაში, რეგისტრაციის ღილაკზე კლიკი განხორციელდება მაშინაც კი, თუ ის არ არის სრულად ხილული, რაც ხელს შეუწყობს რეგისტრაციის პროცესის წარმატებით დასრულებას.
+  cy.contains('გაიარეთ რეგისტრაცია').click({ force: true }) // Force true cypress - ის მიერ დამატებული პარამეტრია, რომელიც საშუალებას აძლევს ელემენტზე კლიკი განხორციელდეს მაშინაც კი, თუ ის არ არის სრულად ხილული ან გადაფარულია სხვა ელემენტით. 
   cy.get('input[name="first_name"]').should('be.visible').type(data.firstname_lastname)
   cy.get('input[name="reg_email"]').should('be.visible').type(data.email)
   cy.get('input[name="phone"]').should('be.visible').type(data.phone)
